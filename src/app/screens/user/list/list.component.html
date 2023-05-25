@@ -1,0 +1,19 @@
+<section kbm-default-page>
+  <ng-container ngProjectAs="dashboard">
+    <p>Dashboard</p>
+  </ng-container>
+  <ng-container ngProjectAs="content">
+    <kbm-card #displayList>
+      <kbm-card-header>
+        <h2 kbmCardTitle>User</h2>
+      </kbm-card-header>
+      <div kbmCardContent>
+        <button kbm-button (click)="openCrateDialog()">Create</button>
+        <button kbm-button (click)="openViewDialog()">View</button>
+      </div>
+    </kbm-card>
+  </ng-container>
+</section>
+<kbm-navbar-projector>
+  <p>User list </p>
+</kbm-navbar-projector>
